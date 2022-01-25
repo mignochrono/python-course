@@ -4,12 +4,14 @@ while trigger==1:
     print('how many cats do you have?')
     numcats = input()
     try:
-        if int(numcats) >= 5: #increased number of cats
+        if int(numcats) >= 4:
             print ('thats is a lot of cats.')
             trigger=0
-        else:
+        elif int (numcats) > 0 :
             print ('that is not  that many cats')
             trigger=0
+        else:
+            print( "that..doesnt make sense?")
     except ValueError:
         print ('you did not enter a number')
         trigger = 1
